@@ -1,10 +1,22 @@
 <?php
 
 class People {
-
     public $name = 'ywz';
     protected $age = '11';
     private $sex = 'sex';
+
+    function __construct($name = 'yaowenzhu') {
+
+        echo '构造函数 ';
+        $this->name = $name;
+
+    }
+
+    function __destruct() {
+
+        echo '析构函数 清理资源';
+
+    }
 
 }
 
@@ -39,3 +51,5 @@ var_dump($me->name);
 
 var_dump($me->age());
 var_dump($me->sex());
+
+
