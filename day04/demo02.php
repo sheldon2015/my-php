@@ -12,6 +12,8 @@ class People {
 
 final class Policeman extends People {
 
+
+
     static $age = 11111111;
 
     function __construct() {
